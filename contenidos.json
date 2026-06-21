@@ -1,0 +1,361 @@
+{
+  "titulo": "Reto 4 - Arquitectura de Ciber-Resiliencia Organizacional",
+  "descripcion": "Guía interactiva sobre diseño de arquitectura para la ciber-resiliencia organizacional",
+  "version": "1.0.0",
+  "autor": "UNAD",
+  "fecha": "2026-06-19",
+  "conceptos": [
+    {
+      "id": 1,
+      "nombre": "Ciberseguridad",
+      "icono": "fas fa-shield-alt",
+      "color": "purple-600",
+      "descripcion": "Conjunto de prácticas y tecnologías para proteger sistemas, redes e información contra ataques digitales no autorizados.",
+      "elementos": [
+        "Firewall",
+        "Antivirus",
+        "Intrusion Detection System (IDS)",
+        "Intrusion Prevention System (IPS)"
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Resiliencia",
+      "icono": "fas fa-sync",
+      "color": "blue-600",
+      "descripcion": "Capacidad de una organización para recuperarse rápidamente de incidentes y mantener la continuidad operativa.",
+      "elementos": [
+        "Redundancia",
+        "Replicación",
+        "Failover automático",
+        "Disaster Recovery"
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Arquitectura",
+      "icono": "fas fa-building",
+      "color": "green-600",
+      "descripcion": "Estructura integral que integra tecnología, procesos y personas para defenderse de amenazas cibernéticas.",
+      "elementos": [
+        "Diseño de sistemas",
+        "Segmentación de redes",
+        "Control de acceso",
+        "Encriptación"
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Continuidad",
+      "icono": "fas fa-redo",
+      "color": "orange-600",
+      "descripcion": "Planes y mecanismos para asegurar que servicios críticos permanezcan operativos ante interrupciones.",
+      "elementos": [
+        "Business Continuity Plan (BCP)",
+        "Disaster Recovery Plan (DRP)",
+        "RTO (Recovery Time Objective)",
+        "RPO (Recovery Point Objective)"
+      ]
+    },
+    {
+      "id": 5,
+      "nombre": "Recuperación",
+      "icono": "fas fa-exchange-alt",
+      "color": "red-600",
+      "descripcion": "Procesos definidos para restaurar sistemas y datos a operación normal post-incidente.",
+      "elementos": [
+        "Backup y restauración",
+        "Snapshots de sistemas",
+        "Recuperación de datos",
+        "Validación de integridad"
+      ]
+    },
+    {
+      "id": 6,
+      "nombre": "Mejora Continua",
+      "icono": "fas fa-chart-line",
+      "color": "indigo-600",
+      "descripcion": "Ciclo permanente de evaluación, análisis y optimización de defensas cibernéticas.",
+      "elementos": [
+        "Análisis de incidentes",
+        "Auditorías de seguridad",
+        "Pruebas de penetración",
+        "Capacitación continua"
+      ]
+    }
+  ],
+  "pilares": [
+    {
+      "id": 1,
+      "nombre": "Prevención",
+      "numero": 1,
+      "icono": "fas fa-lock",
+      "color": "purple",
+      "descripcion": "Implementar controles preventivos para evitar que amenazas alcancen sistemas críticos.",
+      "objetivo": "Prevenir acceso no autorizado y ataques",
+      "estrategias": [
+        {
+          "nombre": "Firewalls y VPN",
+          "detalles": "Crear perímetro de seguridad"
+        },
+        {
+          "nombre": "Autenticación MFA",
+          "detalles": "Verificación de múltiples factores"
+        },
+        {
+          "nombre": "Encriptación",
+          "detalles": "Protección de datos en tránsito y reposo"
+        }
+      ],
+      "herramientas": ["Palo Alto Networks", "Fortinet FortiGate", "Cisco ASA"]
+    },
+    {
+      "id": 2,
+      "nombre": "Detección",
+      "numero": 2,
+      "icono": "fas fa-eye",
+      "color": "blue",
+      "descripcion": "Identificar actividades sospechosas y posibles incidentes de seguridad en tiempo real.",
+      "objetivo": "Detectar amenazas rápidamente",
+      "estrategias": [
+        {
+          "nombre": "SIEM/SOC",
+          "detalles": "Centro de operaciones de seguridad"
+        },
+        {
+          "nombre": "IDS/IPS",
+          "detalles": "Sistemas de detección e prevención"
+        },
+        {
+          "nombre": "EDR",
+          "detalles": "Endpoint Detection and Response"
+        }
+      ],
+      "herramientas": ["Splunk", "Elastic Stack", "CrowdStrike"]
+    },
+    {
+      "id": 3,
+      "nombre": "Respuesta",
+      "numero": 3,
+      "icono": "fas fa-exclamation-triangle",
+      "color": "green",
+      "descripcion": "Actuar rápidamente para contener y minimizar el impacto de incidentes de seguridad.",
+      "objetivo": "Responder efectivamente a incidentes",
+      "estrategias": [
+        {
+          "nombre": "Plan de Crisis",
+          "detalles": "Procedimientos definidos"
+        },
+        {
+          "nombre": "Equipo CSIRT",
+          "detalles": "Computer Security Incident Response Team"
+        },
+        {
+          "nombre": "Comunicación",
+          "detalles": "Transparencia y coordinación"
+        }
+      ],
+      "herramientas": ["Atlassian Jira", "ServiceNow", "PagerDuty"]
+    },
+    {
+      "id": 4,
+      "nombre": "Recuperación",
+      "numero": 4,
+      "icono": "fas fa-sync-alt",
+      "color": "orange",
+      "descripcion": "Restaurar sistemas y operaciones normales después de un incidente de seguridad.",
+      "objetivo": "Restaurar operaciones rápidamente",
+      "estrategias": [
+        {
+          "nombre": "Backup/Restore",
+          "detalles": "Copias de seguridad automáticas"
+        },
+        {
+          "nombre": "DR Plan",
+          "detalles": "Plan de recuperación ante desastres"
+        },
+        {
+          "nombre": "RTO/RPO",
+          "detalles": "Objetivos de tiempo y punto de recuperación"
+        }
+      ],
+      "herramientas": ["Veeam", "Commvault", "Zerto"]
+    },
+    {
+      "id": 5,
+      "nombre": "Aprendizaje",
+      "numero": 5,
+      "icono": "fas fa-graduation-cap",
+      "color": "red",
+      "descripcion": "Analizar incidentes y fortalecer defensas basándose en lecciones aprendidas.",
+      "objetivo": "Mejorar continuamente la postura de seguridad",
+      "estrategias": [
+        {
+          "nombre": "Post-Mortem",
+          "detalles": "Análisis post-incidente"
+        },
+        {
+          "nombre": "Métricas",
+          "detalles": "Medición de efectividad"
+        },
+        {
+          "nombre": "Capacitación",
+          "detalles": "Entrenamiento de personal"
+        }
+      ],
+      "herramientas": ["KnowBe4", "Proofpoint", "Mimecast"]
+    }
+  ],
+  "nivelMaturez": [
+    {
+      "nivel": 1,
+      "nombre": "Inicial",
+      "descripcion": "Procesos ad-hoc sin estructura",
+      "caracteristicas": ["Sin documentación", "Reactivo", "Sin métricas"],
+      "color": "red",
+      "acciones": [
+        "Documentar procesos actuales",
+        "Asignar responsables",
+        "Crear política básica"
+      ]
+    },
+    {
+      "nivel": 2,
+      "nombre": "Repetible",
+      "descripcion": "Procesos definidos e implementados",
+      "caracteristicas": [
+        "Estándares básicos",
+        "Algunos controles",
+        "Documentación inicial"
+      ],
+      "color": "orange",
+      "acciones": [
+        "Estandarizar procedimientos",
+        "Implementar herramientas",
+        "Entrenar equipo"
+      ]
+    },
+    {
+      "nivel": 3,
+      "nombre": "Definido",
+      "descripcion": "Procesos documentados y mejorados",
+      "caracteristicas": [
+        "Políticas formales",
+        "Medición",
+        "Revisión periódica"
+      ],
+      "color": "yellow",
+      "acciones": [
+        "Establecer KPIs",
+        "Realizar auditorías",
+        "Mejorar gobernanza"
+      ]
+    },
+    {
+      "nivel": 4,
+      "nombre": "Gestionado",
+      "descripcion": "Procesos cuantitativamente gestionados",
+      "caracteristicas": [
+        "Métricas avanzadas",
+        "Automatización",
+        "Control estadístico"
+      ],
+      "color": "blue",
+      "acciones": [
+        "Implementar SOAR",
+        "Automatizar respuesta",
+        "Análisis predictivo"
+      ]
+    },
+    {
+      "nivel": 5,
+      "nombre": "Optimizado",
+      "descripcion": "Mejora continua e innovación",
+      "caracteristicas": [
+        "Ciclos de aprendizaje",
+        "IA/ML",
+        "Innovación continua"
+      ],
+      "color": "green",
+      "acciones": [
+        "Implementar ML",
+        "Compartir conocimiento",
+        "Innovar constantemente"
+      ]
+    }
+  ],
+  "recomendaciones": {
+    "1": {
+      "titulo": "Nivel 1: Inicial",
+      "mensaje": "Tu organización está en fases iniciales. Comienza documentando procesos básicos y estableciendo políticas de seguridad.",
+      "proximos_pasos": [
+        "Crear política de ciberseguridad",
+        "Documentar procesos actuales",
+        "Asignar responsables",
+        "Implementar controles básicos"
+      ]
+    },
+    "2": {
+      "titulo": "Nivel 2: Repetible",
+      "mensaje": "Has establecido algunos procesos. Enfócate en estandarizar y documentar toda tu arquitectura de seguridad.",
+      "proximos_pasos": [
+        "Estandarizar procedimientos",
+        "Implementar herramientas de seguridad",
+        "Entrenar personal",
+        "Crear baseline de seguridad"
+      ]
+    },
+    "3": {
+      "titulo": "Nivel 3: Definido",
+      "mensaje": "Buen progreso. Implementa métricas y automatización para medir efectividad.",
+      "proximos_pasos": [
+        "Establecer KPIs",
+        "Realizar auditorías regularmente",
+        "Implementar control de cambios",
+        "Mejorar gobernanza"
+      ]
+    },
+    "4": {
+      "titulo": "Nivel 4: Gestionado",
+      "mensaje": "Excelente madurez. Considera implementar ML/AI para detección avanzada.",
+      "proximos_pasos": [
+        "Implementar SOAR",
+        "Automatizar respuesta a incidentes",
+        "Usar análisis predictivo",
+        "Mejorar eficiencia"
+      ]
+    },
+    "5": {
+      "titulo": "Nivel 5: Optimizado",
+      "mensaje": "Eres un líder en ciberseguridad. Mantén la cultura de mejora continua e innovación.",
+      "proximos_pasos": [
+        "Mantener ciclos de aprendizaje",
+        "Compartir conocimiento con industria",
+        "Innovar constantemente",
+        "Establecer nuevos estándares"
+      ]
+    }
+  },
+  "capas": [
+    {
+      "nombre": "Capa Perimetral",
+      "descripcion": "Primera línea de defensa",
+      "componentes": ["Firewalls", "IDS/IPS", "WAF"]
+    },
+    {
+      "nombre": "Capa de Acceso",
+      "descripcion": "Control de identidad y acceso",
+      "componentes": ["MFA", "IAM", "Control de Acceso"]
+    },
+    {
+      "nombre": "Capa de Aplicación",
+      "descripcion": "Protección a nivel de aplicación",
+      "componentes": ["Validación", "Encriptación", "Logging"]
+    },
+    {
+      "nombre": "Capa de Datos",
+      "descripcion": "Protección de información crítica",
+      "componentes": ["DLP", "Backup", "Cifrado"]
+    }
+  ]
+}
